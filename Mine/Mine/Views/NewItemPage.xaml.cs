@@ -33,6 +33,7 @@ namespace Mine.Views
         /// </summary>
         void Value_OnstepperValueChanged(object sender, ValueChangedEventArgs e)
         {
+            //Item.Value = e.NewValue;
             ValueValue.Text = String.Format("{0}", e.NewValue);
         }
 
