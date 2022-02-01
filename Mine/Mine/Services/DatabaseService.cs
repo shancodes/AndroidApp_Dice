@@ -37,6 +37,7 @@ namespace Mine.Services
             }
         }
 
+
         public Task<bool> CreateAsync(ItemModel item)
         {
             throw new NotImplementedException();
@@ -57,9 +58,10 @@ namespace Mine.Services
             throw new NotImplementedException();
         }
 
-        public Task<IEnumerable<ItemModel>> IndexAsync(bool forceRefresh = false)
+        public async Task<IEnumerable<ItemModel>> IndexAsync(bool forceRefresh = false)
         {
-            throw new NotImplementedException();
+            var result = await Database.Table<ItemModel>().ToListAsync();
+            return result;
         }
     }
 }
