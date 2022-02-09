@@ -10,6 +10,12 @@ namespace Mine.Helpers
 
         public static int ForcedRandomValue = 1;
 
+        /// <summary>
+        /// Function to Roll the dice and get the results
+        /// </summary>
+        /// <param name="rolls"></param>
+        /// <param name="dice"></param>
+        /// <returns></returns>
         public static int RollDice(int rolls, int dice)
         {
             if (ForceRollsToNotRandom)
