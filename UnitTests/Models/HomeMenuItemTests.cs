@@ -7,7 +7,7 @@ namespace UnitTests.Models
     public class HomeMenuItemTests
     {
         [Test]
-        public void HomeMenuItemModel_Constructor_Default_Should_Pass()
+        public void HomeMenuItem_Constructor_Default_Should_Pass()
         {
             // Arrange
 
@@ -21,7 +21,7 @@ namespace UnitTests.Models
         }
 
         [Test]
-        public void HomeMenuItemModel_Set_Default_Should_Pass()
+        public void HomeMenuItem_Set_Get_Valid_Default_Should_Pass()
         {
             // Arrange
             var result = new HomeMenuItem();
@@ -35,8 +35,6 @@ namespace UnitTests.Models
             // Reset
 
             // Assert
-
-            // The Get is tested by retrieving it here as well.
             Assert.AreEqual("Title", result.Title);
             Assert.AreEqual(MenuItemType.Items, result.Id);
         }
